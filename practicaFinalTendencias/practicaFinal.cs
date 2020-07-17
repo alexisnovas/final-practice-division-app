@@ -14,7 +14,8 @@ namespace practicaFinalTendencias
             }
             else if (number1 == double.MaxValue || number2 == double.MaxValue)
             {
-                throw new System.Exception("El número ingresado excede el límite del tipo de dato double.");
+                throw new System.Exception("El número ingresado es igual al límite del tipo de dato double, " +
+                    "por lo cual no puede ser dividido debido a reglas de división");
             }
             
             return resultado;

@@ -57,18 +57,18 @@ namespace practicaFinalTests
         }
 
         [Fact]
-        public void DivisionCalculation_ParameterNumber1IsGreaterThanDoubleTypeLimit_ReturnException()
+        public void DivisionCalculation_ParameterNumber1IsEqualToDoubleTypeLimit_ReturnException()
         {
-            var number1GreaterThanDoubleLimit = double.MaxValue;
-            Assert.Throws<System.Exception>(() => practicaFinal.DivisionCalculation(number1GreaterThanDoubleLimit,8));
+            var DoubleLimit = double.MaxValue;
+            Assert.Throws<System.Exception>(() => practicaFinal.DivisionCalculation(DoubleLimit,8));
 
         }
 
         [Fact]
-        public void DivisionCalculation_ParameterNumber2IsGreaterThanDoubleTypeLimit_ReturnException()
+        public void DivisionCalculation_ParameterNumber2IsEqualToDoubleLimit_ReturnException()
         {
-            var number2GreaterThanDoubleLimit = double.MaxValue;
-            Assert.Throws<System.Exception>(() => practicaFinal.DivisionCalculation(8, number2GreaterThanDoubleLimit));
+            var DoubleLimit = double.MaxValue;
+            Assert.Throws<System.Exception>(() => practicaFinal.DivisionCalculation(8, DoubleLimit));
 
         }
 
