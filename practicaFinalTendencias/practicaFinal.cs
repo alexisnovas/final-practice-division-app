@@ -10,11 +10,11 @@ namespace practicaFinalTendencias
 
             if (number2 == 0)
             {
-                throw new System.DivideByZeroException();
+                throw new System.DivideByZeroException("Se está tratando de dividir un número entre cero.");
             }
             else if (number1 == double.MaxValue || number2 == double.MaxValue)
             {
-                throw new System.Exception();
+                throw new System.Exception("El número ingresado excede el límite del tipo de dato double.");
             }
             
             return resultado;
